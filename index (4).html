@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mağaza Sayfası</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+   body { font-family: 'Roboto', sans-serif; }
+   .font-supercell { font-family: 'Supercell-Magic', sans-serif; }
+  </style>
+</head>
+<body class="bg-blue-50 font-roboto relative">
+
+  <!-- SABİT BİLDİRİM - ÜCRETSİZ AL ETKİNLİĞİ -->
+  <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-2 font-bold text-sm fixed top-0 left-0 w-full z-50 shadow-md">
+    <i class="fas fa-gift mr-2"></i> 
+    <span class="animate-pulse">🎉 EJDERHALAR SAVAŞI ARKA PLANI ÜCRETSİZ! Hemen al, etkinlik bitiyor! 🎉</span>
+    <i class="fas fa-gift ml-2"></i>
+  </div>
+
+  <div class="max-w-screen-sm mx-auto pt-8">
+   <img alt="Kalkan ve oklarla süslenmiş üst arka plan" class="w-full h-auto" src="https://i.hizliresim.com/i14hpx9.jpg">
+  </div>
+
+  <!-- Başlık -->
+  <div class="text-center mt-4 max-w-screen-sm mx-auto px-4">
+   <h1 class="text-4xl font-bold flex items-center justify-center font-supercell select-none">
+    <img alt="Clash of Clans ikonu" class="w-8 h-8 mr-2" src="https://store.supercell.com/_next/static/media/coc_icon_scenery.a300b94a.png" width="30" height="30">
+    <span>Arka Planlar</span>
+   </h1>
+  </div>
+
+  <!-- Grid: Karanlık Günler + Ejderhalar Savaşı -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center mt-6 max-w-screen-sm mx-auto px-4">
+
+    <!-- Ejderhalar Savaşı Arka Planı (1. ürün) -->
+    <div class="bg-white rounded-lg shadow-lg p-4 relative overflow-hidden">
+      <!-- ETKİNLİK BADGE -->
+      <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse z-10">
+        <i class="fas fa-bolt mr-1"></i> ÜCRETSİZ
+      </div>
+      <div class="bg-blue-200 rounded-t-lg p-4">
+       <h2 class="text-2xl font-bold text-center">Ejderhalar Savaşı Arka Planı</h2>
+       <div class="mt-4 rounded-lg overflow-hidden">
+         <video muted="" playsinline="" loop="" autoplay="" poster="https://game-assets.store.supercell.com/clashofclans/de84605b-e080-420c-bf3d-def796be7355.png" preload="metadata" class="w-full h-auto rounded-lg">
+            <source src="https://game-assets.store.supercell.com/clashofclans/b193fdcf-9f59-4f69-a20b-f458c5299a8c.mov#t=0.1" type="video/quicktime;codecs=hvc1">
+            <source src="https://game-assets.store.supercell.com/clashofclans/86015b42-68cf-4f8b-ab3b-c97d1084420f.webm#t=0.1" type="video/webm">
+            <img alt="Video bulunamadı" src="https://store.supercell.com/_next/static/media/store_not_found_bag.ac1f8504.svg" width="130" height="119">
+         </video>
+       </div>
+      </div>
+      <div class="flex justify-between items-center mt-4">
+       <div class="flex items-center space-x-2">
+        <div class="bg-black text-white rounded-full px-2 py-1 text-sm flex items-center">
+         <img alt="Bonus puan" class="w-4 h-4 mr-1" src="https://store.supercell.com/_next/static/media/bonus-track-points-icon.b1806b98.svg">
+         +350 puan
+        </div>
+        <div class="bg-white text-black border border-black rounded-full px-2 py-1 text-sm flex items-center">
+         <img alt="IDR bilgi" class="w-4 h-4 mr-1" src="https://store.supercell.com/_next/static/media/idr-info-icon.6b1624a6.png">
+         +350 puan
+        </div>
+       </div>
+       <a id="buyButton1" class="bg-black text-white rounded-full px-4 py-2 text-sm flex items-center select-none cursor-pointer hover:bg-green-700 transition" href="login.html">
+        <i class="fas fa-shopping-bag mr-1"></i> Ücretsiz Al
+       </a>
+      </div>
+    </div>
+
+    <!-- Ejderhalar Savaşı (2. ürün) -->
+    <div class="bg-white rounded-lg shadow-lg p-4">
+      <button class="relative bg-[#3b2d23] hover:bg-[#2a1f17] text-white w-full rounded-lg overflow-hidden transition transform hover:scale-105 duration-300">
+        
+        <!-- Başlık -->
+        <h3 class="text-xl font-bold text-center pt-4">Ejderhalar Savaşı</h3>
+
+        <!-- Flare -->
+        <div class="absolute inset-0">
+          <div class="w-full h-full bg-no-repeat bg-center opacity-40" style="background-image:url('https://store.supercell.com/_next/static/media/shop_item_bg_flare.79c48672.png')">
+          </div>
+        </div>
+
+        <!-- Resim -->
+        <div class="relative flex items-center justify-center py-6">
+          <img alt="Ejderhalar Savaşı" src="https://game-assets.store.supercell.com/clashofclans/de84605b-e080-420c-bf3d-def796be7355.png" class="w-40 h-40 object-contain relative z-10">
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-black bg-opacity-40 py-2 text-center relative z-10">
+          <h4 class="text-lg font-bold">1x</h4>
+        </div>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- YORUM BÖLÜMÜ - BONUS KARTININ HEMEN ÜSTÜNDE -->
+  <div class="max-w-screen-sm mx-auto mt-6 px-4">
+    <div class="bg-white rounded-lg shadow-lg p-4">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-lg font-bold flex items-center">
+          <i class="fas fa-comments text-blue-600 mr-2"></i>
+          Yorumlar (<span id="yorumSayisi">15</span>)
+        </h3>
+        <span class="text-xs text-gray-500">canlı</span>
+      </div>
+      
+      <!-- Yorum Yapma Alanı -->
+      <div class="mb-4 flex items-start space-x-2">
+        <img alt="Avatar" class="w-8 h-8 rounded-full" src="https://via.placeholder.com/32">
+        <div class="flex-1">
+          <textarea id="yorumInput" placeholder="Bir yorum yazın..." class="w-full border border-gray-300 rounded-lg p-2 text-sm focus:outline-none focus:border-blue-500" rows="2"></textarea>
+          <div class="flex justify-end mt-2">
+            <button id="yorumGonder" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-1.5 rounded-lg flex items-center">
+              <i class="fas fa-paper-plane mr-1"></i> Gönder
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Yorum Listesi - TÜM 15 YORUM -->
+      <div id="yorumListesi" class="space-y-4 max-h-96 overflow-y-auto pr-1">
+        
+        <!-- Yorum 1 - Mehmet_Ali_35 -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="1">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/8a7k2lq.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Mehmet_Ali_35</span>
+              <span class="text-gray-500 text-xs ml-2">• 2 dk önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Arkadaşlar kaçırmayın derim bende yeni aldım süper duruyor köyde</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">24</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">3</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 2 - ZeynepClash -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="2">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/3f9m2n1.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">ZeynepClash</span>
+              <span class="text-gray-500 text-xs ml-2">• 15 dk önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Bende aldım çok şükür ya kaçırdım sanmıştım herkese tavsiye ederim</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">42</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">7</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 3 - CanBaba_61 -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="3">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/2k8l3m4.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">CanBaba_61</span>
+              <span class="text-gray-500 text-xs ml-2">• 34 dk önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Valla ilk başta tereddüt ettim ama pişman değilim çok iyi</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">18</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">2</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 4 - Elif_Clash -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="4">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/5n6m7k8.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Elif_Clash</span>
+              <span class="text-gray-500 text-xs ml-2">• 1 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Arkadaşım söyledi aldım gerçekten harika görünüyor</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">37</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">5</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 5 - Ahmet_Clasher -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="5">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/9l0k1j2.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Ahmet_Clasher</span>
+              <span class="text-gray-500 text-xs ml-2">• 2 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Etkinlik bitmeden alın derim ben geç kalmıştım</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">56</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">12</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 6 - Merve_clash -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="6">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/3d4f5g6.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Merve_clash</span>
+              <span class="text-gray-500 text-xs ml-2">• 3 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Çok şükür aldım ya sabah beri uğraşıyordum</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">29</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">4</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 7 - Kral_Emre -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="7">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/7h8j9k0.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Kral_Emre</span>
+              <span class="text-gray-500 text-xs ml-2">• 5 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Görüntü mükemmel, kesinlikle tavsiye ederim</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">63</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">15</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 8 - Sude_Nur -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="8">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/1a2s3d4.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Sude_Nur</span>
+              <span class="text-gray-500 text-xs ml-2">• 6 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Ben aldım kardeşim de alsın diye bekliyorum</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">21</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">8</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 9 - Burak_34 -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="9">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/5f6g7h8.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Burak_34</span>
+              <span class="text-gray-500 text-xs ml-2">• 8 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Ücretsiz böyle bir şey kaçmaz hemen alın</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">45</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">9</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 10 - Cansu_01 -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="10">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/9j0k1l2.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Cansu_01</span>
+              <span class="text-gray-500 text-xs ml-2">• 10 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Köyüm çok güzel oldu yeni arka planla</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">33</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">6</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 11 - Mert_Can -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="11">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/3m4n5b6.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Mert_Can</span>
+              <span class="text-gray-500 text-xs ml-2">• 12 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Arkadaşımın tavsiyesiyle aldım iyi ki de almışım</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">27</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">4</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 12 - Dilara_Clash -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="12">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/7v8c9x0.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Dilara_Clash</span>
+              <span class="text-gray-500 text-xs ml-2">• 14 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Etkinlik süper devamını bekliyoruz</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">52</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">11</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 13 - Oğuz_53 -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="13">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/1z2x3c4.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Oğuz_53</span>
+              <span class="text-gray-500 text-xs ml-2">• 16 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Aldım aldırdım herkese söylüyorum alın diye</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">39</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">7</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 14 - Betül_Clash -->
+        <div class="flex items-start border-b border-gray-100 pb-3" data-comment-id="14">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/5v6b7n8.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Betül_Clash</span>
+              <span class="text-gray-500 text-xs ml-2">• 18 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Görüntü harika, performans aynı tavsiye ederim</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">44</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">8</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+        <!-- Yorum 15 - Fatih_42 -->
+        <div class="flex items-start pb-3" data-comment-id="15">
+          <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://i.hizliresim.com/9m0k1l2.jpg" onerror="this.src='https://via.placeholder.com/32'">
+          <div class="flex-1">
+            <div class="flex items-center flex-wrap">
+              <span class="font-semibold text-gray-800 text-sm">Fatih_42</span>
+              <span class="text-gray-500 text-xs ml-2">• 20 saat önce</span>
+            </div>
+            <p class="text-gray-700 text-sm">Kaçırmayın derim ben 2 hesabıma da aldım</p>
+            <div class="flex items-center mt-2 text-gray-400 text-xs">
+              <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                <i class="far fa-heart mr-1"></i> <span class="begen-sayi">68</span>
+              </button>
+              <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">14</span>
+              </button>
+            </div>
+            <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Canlı bildirim -->
+      <div class="mt-3 text-xs text-green-600 flex items-center">
+        <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+        3 kişi şu anda bakıyor • <span class="text-gray-500 ml-1">son yorum 2 dk önce</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bonus ve görsel (YORUMLARDAN HEMEN SONRA) -->
+  <div class="flex justify-center mt-4 max-w-screen-sm mx-auto px-4 mb-8">
+   <div class="bg-white rounded-lg shadow-lg p-4 w-80 flex flex-col items-center justify-between">
+    <div class="flex items-center space-x-2 mb-2">
+     <div class="bg-yellow-400 text-black rounded-full px-2 py-1 text-sm flex items-center select-none font-bold">
+      <i class="fas fa-coins mr-1"></i> 3500 PUAN
+     </div>
+     <span class="text-sm select-none flex items-center space-x-1">
+      <span>Sonraki Mağaza Bonusu</span>
+      <img alt="Sonraki mağaza bonusu" class="w-6 h-6" src="https://event-assets.clashofclans.com/ea59d115-ade8-4a42-b279-d5cc0d0817be_ring_of_walls.png">
+     </span>
+    </div>
+    <img alt="Resim Yükle" src="https://i.hizliresim.com/7gte5m3.jpg" class="w-full rounded">
+    
+    <!-- BİLDİRİM: Sade ve küçük -->
+    <div class="w-full bg-blue-100 text-blue-800 text-xs rounded p-2 mt-3 flex items-center">
+      <i class="fas fa-gift mr-2"></i>
+      <span>Bugün 47 kişi bu arka planı aldı. Etkinlik 2 gün devam edecek.</span>
+    </div>
+    
+    <!-- ETKİNLİK SAYACI -->
+    <div class="w-full bg-red-100 text-red-800 text-xs rounded p-2 mt-2 flex items-center justify-center font-bold">
+      <i class="fas fa-hourglass-half mr-2"></i>
+      <span id="countdown">23:59:12</span> kaldı!
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal - ETKİNLİK BİLDİRİMİ -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+   <div class="bg-white rounded-lg shadow-lg max-w-xs w-full p-6 text-center">
+    <h3 class="text-xl font-bold mb-4 text-purple-600">🎁 ÖZEL ETKİNLİK! 🎁</h3>
+    <video muted="" playsinline="" loop="" autoplay="" poster="https://game-assets.store.supercell.com/clashofclans/de84605b-e080-420c-bf3d-def796be7355.png" class="mx-auto mb-4 rounded w-40 h-auto">
+      <source src="https://game-assets.store.supercell.com/clashofclans/86015b42-68cf-4f8b-ab3b-c97d1084420f.webm#t=0.1" type="video/webm">
+      <img alt="Video bulunamadı" src="https://store.supercell.com/_next/static/media/store_not_found_bag.ac1f8504.svg">
+    </video>
+    <p class="mb-2 font-bold">Ejderhalar Savaşı Arka Planı</p>
+    <p class="mb-4 text-green-600 font-bold text-2xl">ÜCRETSİZ!</p>
+    <p class="mb-6 text-sm">Sınırlı süre etkinliği! Kaçırmayın!</p>
+    <button id="acceptBtn" class="bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-lg mr-2 text-lg animate-pulse">
+     <i class="fas fa-gift mr-2"></i> Ücretsiz Al
+    </button>
+    <button id="closeBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold px-4 py-2 rounded mt-2">
+     Kapat
+    </button>
+   </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+   window.addEventListener('load', () => {
+    // Modal işlemleri
+    const modal = document.getElementById('modal');
+    const acceptBtn = document.getElementById('acceptBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const buyButtons = document.querySelectorAll('[id^="buyButton"]');
+    const yorumInput = document.getElementById('yorumInput');
+    const yorumGonder = document.getElementById('yorumGonder');
+    const yorumSayisiSpan = document.getElementById('yorumSayisi');
+    
+    // Yorum sayısını güncelle
+    let yorumSayisi = 15;
+
+    // Modal göster (2 saniye sonra)
+    setTimeout(() => { 
+      if (modal) modal.classList.remove('hidden'); 
+    }, 2000);
+
+    // Modal butonları
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        if (buyButtons.length > 0) buyButtons[0].click();
+      });
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => { 
+        modal.classList.add('hidden'); 
+      });
+    }
+    
+    // Buy button yönlendirmeleri
+    buyButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = 'login.html';
+      });
+    });
+    
+    // SAYAÇ FONKSİYONU
+    function startCountdown() {
+      let hours = 23;
+      let minutes = 59;
+      let seconds = 12;
+      
+      const countdownEl = document.getElementById('countdown');
+      
+      setInterval(() => {
+        seconds--;
+        if (seconds < 0) {
+          seconds = 59;
+          minutes--;
+          if (minutes < 0) {
+            minutes = 59;
+            hours--;
+            if (hours < 0) {
+              hours = 0;
+              minutes = 0;
+              seconds = 0;
+            }
+          }
+        }
+        
+        const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        if (countdownEl) countdownEl.textContent = timeString;
+      }, 1000);
+    }
+    
+    startCountdown();
+    
+    // BEĞENİ BUTONLARI
+    document.querySelectorAll('.begen-buton').forEach(buton => {
+      buton.addEventListener('click', function(e) {
+        e.preventDefault();
+        const begenSpan = this.querySelector('.begen-sayi');
+        let begenSayi = parseInt(begenSpan.textContent);
+        const icon = this.querySelector('i');
+        
+        if (this.classList.contains('begenildi')) {
+          begenSayi--;
+          begenSpan.textContent = begenSayi;
+          this.classList.remove('begenildi', 'text-red-500');
+          icon.classList.remove('fas', 'text-red-500');
+          icon.classList.add('far');
+        } else {
+          begenSayi++;
+          begenSpan.textContent = begenSayi;
+          this.classList.add('begenildi', 'text-red-500');
+          icon.classList.remove('far');
+          icon.classList.add('fas', 'text-red-500');
+        }
+      });
+    });
+    
+    // CEVAPLA BUTONLARI
+    document.querySelectorAll('.cevapla-buton').forEach(buton => {
+      buton.addEventListener('click', function(e) {
+        e.preventDefault();
+        const yorumDiv = this.closest('[data-comment-id]');
+        const cevaplarAlani = yorumDiv.querySelector('.cevaplar-alani');
+        const cevapSpan = this.querySelector('.cevap-sayi');
+        let cevapSayi = parseInt(cevapSpan.textContent);
+        
+        if (cevaplarAlani.classList.contains('hidden')) {
+          cevaplarAlani.classList.remove('hidden');
+          
+          if (cevaplarAlani.children.length === 0) {
+            const cevapInputHtml = `
+              <div class="flex items-start mt-2">
+                <img alt="Avatar" class="w-6 h-6 rounded-full mr-2" src="https://via.placeholder.com/24">
+                <div class="flex-1">
+                  <input type="text" placeholder="Bir cevap yazın..." class="cevap-input w-full border border-gray-200 rounded-lg p-1 text-xs focus:outline-none focus:border-blue-500">
+                </div>
+              </div>
+            `;
+            cevaplarAlani.insertAdjacentHTML('beforeend', cevapInputHtml);
+            
+            const cevapInput = cevaplarAlani.querySelector('.cevap-input');
+            cevapInput.addEventListener('keypress', (e) => {
+              if (e.key === 'Enter' && e.target.value.trim() !== '') {
+                const yeniCevap = `
+                  <div class="flex items-start mt-2">
+                    <img alt="Avatar" class="w-6 h-6 rounded-full mr-2" src="https://via.placeholder.com/24">
+                    <div class="flex-1">
+                      <div class="flex items-center flex-wrap">
+                        <span class="font-semibold text-gray-800 text-xs">Misafir_${Math.floor(Math.random() * 1000)}</span>
+                        <span class="text-gray-500 text-xs ml-2">• şimdi</span>
+                      </div>
+                      <p class="text-gray-600 text-xs">${e.target.value}</p>
+                    </div>
+                  </div>
+                `;
+                cevaplarAlani.insertAdjacentHTML('beforeend', yeniCevap);
+                e.target.value = '';
+                
+                cevapSayi++;
+                cevapSpan.textContent = cevapSayi;
+              }
+            });
+          }
+          
+          this.querySelector('i').classList.remove('far');
+          this.querySelector('i').classList.add('fas');
+        } else {
+          cevaplarAlani.classList.add('hidden');
+          this.querySelector('i').classList.remove('fas');
+          this.querySelector('i').classList.add('far');
+        }
+      });
+    });
+    
+    // YORUM GÖNDERME
+    if (yorumGonder) {
+      yorumGonder.addEventListener('click', () => {
+        if (yorumInput.value.trim() !== '') {
+          
+          // Yeni yorum oluştur
+          const yeniYorum = document.createElement('div');
+          yeniYorum.className = 'flex items-start border-b border-gray-100 pb-3 mb-2';
+          yeniYorum.setAttribute('data-comment-id', 'yeni-' + Date.now());
+          
+          yeniYorum.innerHTML = `
+            <img alt="Avatar" class="w-8 h-8 rounded-full mr-2" src="https://via.placeholder.com/32">
+            <div class="flex-1">
+              <div class="flex items-center flex-wrap">
+                <span class="font-semibold text-gray-800 text-sm">Misafir_${Math.floor(Math.random() * 1000)}</span>
+                <span class="text-gray-500 text-xs ml-2">• şimdi</span>
+              </div>
+              <p class="text-gray-700 text-sm">${yorumInput.value.trim()}</p>
+              <div class="flex items-center mt-2 text-gray-400 text-xs">
+                <button class="begen-buton flex items-center mr-3 hover:text-red-500 transition">
+                  <i class="far fa-heart mr-1"></i> <span class="begen-sayi">0</span>
+                </button>
+                <button class="cevapla-buton flex items-center mr-3 hover:text-blue-500 transition">
+                  <i class="far fa-comment mr-1"></i> <span class="cevap-sayi">0</span>
+                </button>
+              </div>
+              <div class="cevaplar-alani mt-2 ml-4 hidden"></div>
+            </div>
+          `;
+          
+          // Yorumu listenin başına ekle
+          const yorumListesi = document.getElementById('yorumListesi');
+          yorumListesi.insertBefore(yeniYorum, yorumListesi.firstChild);
+          
+          // Yorum sayısını güncelle
+          yorumSayisi++;
+          yorumSayisiSpan.textContent = yorumSayisi;
+          
+          // Input'u temizle
+          yorumInput.value = '';
+          
+          // Yeni yoruma beğeni özelliği ekle
+          const begenButon = yeniYorum.querySelector('.begen-buton');
+          begenButon.addEventListener('click', function(e) {
+            e.preventDefault();
+            const begenSpan = this.querySelector('.begen-sayi');
+            let begenSayi = parseInt(begenSpan.textContent);
+            const icon = this.querySelector('i');
+            
+            if (this.classList.contains('begenildi')) {
+              begenSayi--;
+              begenSpan.textContent = begenSayi;
+              this.classList.remove('begenildi', 'text-red-500');
+              icon.classList.remove('fas', 'text-red-500');
+              icon.classList.add('far');
+            } else {
+              begenSayi++;
+              begenSpan.textContent = begenSayi;
+              this.classList.add('begenildi', 'text-red-500');
+              icon.classList.remove('far');
+              icon.classList.add('fas', 'text-red-500');
+            }
+          });
+          
+          // Yeni yoruma cevapla özelliği ekle
+          const cevaplaButon = yeniYorum.querySelector('.cevapla-buton');
+          cevaplaButon.addEventListener('click', function(e) {
+            e.preventDefault();
+            const yorumDiv = this.closest('[data-comment-id]');
+            const cevaplarAlani = yorumDiv.querySelector('.cevaplar-alani');
+            const cevapSpan = this.querySelector('.cevap-sayi');
+            let cevapSayi = parseInt(cevapSpan.textContent);
+            
+            if (cevaplarAlani.classList.contains('hidden')) {
+              cevaplarAlani.classList.remove('hidden');
+              
+              if (cevaplarAlani.children.length === 0) {
+                const cevapInputHtml = `
+                  <div class="flex items-start mt-2">
+                    <img alt="Avatar" class="w-6 h-6 rounded-full mr-2" src="https://via.placeholder.com/24">
+                    <div class="flex-1">
+                      <input type="text" placeholder="Bir cevap yazın..." class="cevap-input w-full border border-gray-200 rounded-lg p-1 text-xs focus:outline-none focus:border-blue-500">
+                    </div>
+                  </div>
+                `;
+                cevaplarAlani.insertAdjacentHTML('beforeend', cevapInputHtml);
+                
+                const cevapInput = cevaplarAlani.querySelector('.cevap-input');
+                cevapInput.addEventListener('keypress', (e) => {
+                  if (e.key === 'Enter' && e.target.value.trim() !== '') {
+                    const yeniCevap = `
+                      <div class="flex items-start mt-2">
+                        <img alt="Avatar" class="w-6 h-6 rounded-full mr-2" src="https://via.placeholder.com/24">
+                        <div class="flex-1">
+                          <div class="flex items-center flex-wrap">
+                            <span class="font-semibold text-gray-800 text-xs">Misafir_${Math.floor(Math.random() * 1000)}</span>
+                            <span class="text-gray-500 text-xs ml-2">• şimdi</span>
+                          </div>
+                          <p class="text-gray-600 text-xs">${e.target.value}</p>
+                        </div>
+                      </div>
+                    `;
+                    cevaplarAlani.insertAdjacentHTML('beforeend', yeniCevap);
+                    e.target.value = '';
+                    
+                    cevapSayi++;
+                    cevapSpan.textContent = cevapSayi;
+                  }
+                });
+              }
+              
+              this.querySelector('i').classList.remove('far');
+              this.querySelector('i').classList.add('fas');
+            } else {
+              cevaplarAlani.classList.add('hidden');
+              this.querySelector('i').classList.remove('fas');
+              this.querySelector('i').classList.add('far');
+            }
+          });
+          
+          // Kaydırmayı en üste al
+          yorumListesi.scrollTop = 0;
+          
+        } else {
+          alert('Lütfen bir yorum yazın.');
+        }
+      });
+    }
+   });
+  </script>
+</body>
+</html>
