@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arka Planlar</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f172a;
+    font-family:Arial, sans-serif;
+    color:#fff;
+}
+
+.image-box{
+    display:block;
+    width:100%;
+}
+
+.image-box img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.event-box{
+    padding:16px;
+    background:#111827;
+    text-align:center;
+}
+
+.timer-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    margin-bottom:10px;
+}
+
+.clock{
+    width:20px;
+    height:20px;
+}
+
+.timer{
+    font-size:18px;
+    font-weight:bold;
+    color:#22c55e;
+}
+
+.login-text{
+    font-size:14px;
+    color:#cbd5e1;
+    margin-bottom:12px;
+    line-height:1.4;
+}
+
+.btn{
+    display:inline-block;
+    background:#3b82f6;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.comments{
+    padding:15px;
+}
+
+.comment{
+    background:#1e293b;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.name{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.text{
+    font-size:14px;
+    margin-top:5px;
+    color:#cbd5e1;
+}
+
+/* Popup */
+.popup{
+    position:fixed;
+    left:50%;
+    bottom:20px;
+    transform:translateX(-50%);
+    width:90%;
+    max-width:360px;
+    display:none;
+    z-index:9999;
+}
+
+.popup-box{
+    background:#1e293b;
+    border-radius:14px;
+    padding:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.45);
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.popup-title{
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+.popup-text{
+    font-size:14px;
+    color:#cbd5e1;
+    margin-bottom:12px;
+    line-height:1.5;
+}
+
+.popup-btn{
+    display:block;
+    width:100%;
+    background:#22c55e;
+    color:#fff;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.close-btn{
+    margin-top:10px;
+    display:inline-block;
+    font-size:13px;
+    color:#94a3b8;
+    background:none;
+    border:none;
+}
+</style>
+</head>
+<body>
+
+<!-- 1. resim -->
+<a href="login.html" class="image-box">
+    <img src="https://i.hizliresim.com/sl6gkae.jpg" alt="Resim 1">
+</a>
+
+<!-- 2. resim -->
+<a href="login.html" class="image-box" id="secondImageBox">
+    <img src="https://i.hizliresim.com/doo7f4x.png" alt="Resim 2">
+</a>
+
+<div class="event-box">
+    <div class="timer-wrap">
+        <img class="clock" src="https://store.supercell.com/_next/static/media/icon-clock.ea4a638a.png" alt="Saat">
+        <div class="timer" id="timer">01:00:00</div>
+    </div>
+    <div class="login-text">Arka planı ücretsiz  almak için giriş yap</div>
+    <a href="login.html" class="btn">Giriş Yap</a>
+</div>
+<div class="comments">
+    <div class="comment">
+        <div class="name">Yörük</div>
+        <div class="text">    Ateş ve buz baya iyi tesekürler supercell.</div>
+    </div>
+<div class="comments">
+    <div class="comment">
+        <div class="name">Emre a</div>
+        <div class="text">Ateş ve buz arka plani baya iyi durdu hesabımda</div>
+    </div>
+<div class="comments">
+    <div class="comment">
+        <div class="name">fatih </div>
+        <div class="text">Ateş ve buz  arka planı muhteşem durdu hesabimda🔥</div>
+    </div>
+<div class="comments">
+    <div class="comment">
+        <div class="name">kadir t</div>
+        <div class="text">belediye 17 hesabıma aldım çok güzel oldu arkadaşlarıma da söyliceğim onlarda alsın</div>
+    </div>
+    <div class="comment">
+        <div class="name">Kaan demir</div>
+        <div class="text">belediye 18 Max hesabimda çok guzel durdu bitmeden alın kacirmayin</div>
+    </div>
+</div>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+    <div class="popup-box">
+        <div class="popup-title">🔥 Ateş ve Buz</div>
+        <div class="popup-text">Ateş ve buz arka planı ücretsiz alınabilir.</div>
+        <a href="login.html" class="popup-btn">Ücretsiz Al</a>
+        <button class="close-btn" onclick="closePopup()">Kapat</button>
+    </div>
+</div>
+
+<script>
+let endTime = localStorage.getItem("eventEndTime");
+
+if (!endTime) {
+    endTime = Date.now() + (60 * 60 * 1000);
+    localStorage.setItem("eventEndTime", endTime);
+} else {
+    endTime = Number(endTime);
+}
+
+const timerEl = document.getElementById("timer");
+
+function updateTimer() {
+    const now = Dateby.now();
+    const diff = endTime - now;
+
+    if (diff <= 0) {
+        timerEl.textContent = "Etkinlik bitti";
+        return;
+    }
+
+    const totalSeconds = Math.floor(diff / 1000);
+    const h = Math.floor(totalSeconds / 3600);
+    const m = Math.floor((totalSeconds % 3600) / 60);
+    const s = totalSeconds % 60;
+
+    timerEl.textContent =
+        String(h).padStart(2, "0") + ":" +
+        String(m).padStart(2, "0") + ":" +
+        String(s).padStart(2, "0");
+}
+
+setInterval(updateTimer, 1000);
+updateTimer();
+
+let popupTriggered = false;
+let popupTimeout = null;
+
+function showPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+function checkSecondImageVisible() {
+    if (popupTriggered) return;
+
+    const secondImage = document.getElementById("secondImageBox");
+    const rect = secondImage.getBoundingClientRect();
+
+    const visible = rect.top < window.innerHeight && rect.bottom > 0;
+
+    if (visible) {
+        popupTriggered = true;
+        popupTimeout = setTimeout(showPopup, 10000);
+    }
+}
+
+window.addEventListener("scroll", checkSecondImageVisible);
+window.addEventListener("load", checkSecondImageVisible);
+</script>
+
+</body>
+</html>
